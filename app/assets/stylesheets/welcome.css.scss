@@ -1,0 +1,129 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body{height: 100%}
+
+#carousel{background-color: #888;}
+#carousel img{margin-left: auto; margin-right: auto;}
+
+img.host{clear: both;}
+
+div.maps{
+
+  div{
+    text-align: center;
+    height: 280px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 550px;
+  }
+
+}
+
+h1 {
+ padding: 5px 40px 5px 40px;
+}
+
+a.carousel-control.right{
+  background-color: #888;
+  background-image: none;
+}
+
+a.carousel-control.left{
+  background-color: #888;
+  background-image: none;
+}
+
+div.photos{
+
+  h3{color: white;
+     margin: 5px 0 5px 0;}
+
+  background-color: rgb(200, 186, 219);
+  color: black;
+  font-size: 1.2em;
+
+  div.carousel{
+    margin: 0 -15px 0 -15px;
+  }
+
+  div.host{
+
+    img{clear: both;
+        padding-bottom: 5px;}
+
+    background-color: rgb(166, 149, 194);
+    color: white;
+    padding: 15px;
+
+    ul {
+      padding: 12px;
+    }
+
+    height: 100%;
+
+    span.drop-word{
+      font-size: 2em;
+      line-height: 1em;
+    }
+
+    a.btn {color: black; 
+           background-color: yellow; 
+           width: 100%; 
+           font-size: 1.4em;
+           margin: 3px 0 3px 0}
+
+  }
+
+}
+
+div.find{
+
+  background-color: #888;
+  color: white;
+
+  img{width: 100%;
+      max-width: 550px}
+
+  h3{margin: 0; padding: 10px;}
+  h4{margin: 0; padding: 0 0 3px 0px;}
+
+  div{padding: 10px 0 0 0;}
+
+  div.small-map{
+    padding-left: 10px;
+  }
+
+}
+
+div.contact{
+
+  input, textarea{width: 250px;}
+
+  div.ask{
+    background-color: rgb(254, 198, 1);
+  }
+
+  div.availability{
+    background-color: rgb(252, 223, 109);
+  }
+
+}
+
+@media(max-width:767px){
+
+  div.find{
+    div.large-map{
+      padding-left: 10px;
+    }
+  }
+
+}
+
+
+
+
+
