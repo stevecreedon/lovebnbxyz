@@ -5,5 +5,6 @@
 $(document).ready ->
   $('.carousel').carousel()
   $('input[type=date]').pickadate() if $('input[type=date]').pickadate
+  $('input[type=email]').defaultValue('your email')
   
   

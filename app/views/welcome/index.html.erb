@@ -52,32 +52,61 @@
 </div>
 
 <a id="find"></a>
+
 <div class="row-fluid clearfix find">
+  <div class="col-sm-6">
+    <h3>address</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ullamcorper velit. Donec vehicula euismod est, interdum sollicitudin orci rhoncus vel. In faucibus nisi id erat vehicula cursus. Nullam tristique interdum nisi, non convallis erat placerat sit amet. Sed commodo quis tellus quis dictum.</p>
+  </div>
+  <div class="col-sm-6">
+    <h3>plane</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ullamcorper velit. Donec vehicula euismod est, interdum sollicitudin orci rhoncus vel. In faucibus nisi id erat vehicula cursus. Nullam tristique interdum nisi, non convallis erat placerat sit amet. Sed commodo quis tellus quis dictum.</p>
+  </div>
+</div>
+
+
+<div class="row-fluid clearfix find">
+  <div class="col-sm-6">
+    <h3>car</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ullamcorper velit. Donec vehicula euismod est, interdum sollicitudin orci rhoncus vel. In faucibus nisi id erat vehicula cursus. Nullam tristique interdum nisi, non convallis erat placerat sit amet. Sed commodo quis tellus quis dictum.</p>
+  </div>
+  <div class="col-sm-6">
+    <h3>train</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ullamcorper velit. Donec vehicula euismod est, interdum sollicitudin orci rhoncus vel. In faucibus nisi id erat vehicula cursus. Nullam tristique interdum nisi, non convallis erat placerat sit amet. Sed commodo quis tellus quis dictum.</p>
+  </div>
+</div>
+
+<div class="row-fluid clearfix maps">
   <div class="col-sm-6 small-map">
-  <h4>regional map</h4>
+  <h3>regional map</h3>
   <img src="http://maps.google.com/maps/api/staticmap?center=52.503537,13.411071&zoom=12&markers=color:white|51.154325,11.801663|52.503537,13.411071&size=550x550&sensor=false">
   </div>
    <div class="col-sm-6 large-map">
-     <h4>local map</h4>
+     <h3>local map</h3>
      <img src="http://maps.google.com/maps/api/staticmap?center=52.503537,13.411071&zoom=14&markers=color:white|51.154325,11.801663|52.503537,13.411071&size=550x550&sensor=false">
   </div>
 </div>
 
 <a id="contact"></a>
-<div class="row-fluid contact">
+<div class="row-fluid contact clearfix">
   <div class="col-sm-6 ask">
     <h3>ask about availability</h3>
     <%= form_tag do %>
-      <p><input type="email" name="email" value="your email"/></p>
-      <p><input type="date" name="checkin" /></p>
-      <p><input type="date" name="checkout" /></p> 
+      <p><input type="email" name="email" placeholder="your email" /></p>
+      <p><input type="date" name="checkin" placeholder="arrive" /></p>
+      <p><input type="date" name="checkout" placeholder="depart" /></p>
+      <p><select>
+           <option>exact dates only</option>
+           <option>flexible by a few days</option>
+           <option>very flexible</option>
+         </select></p> 
     <% end %>
   </div>
   <div class="col-sm-6 availability">
     <h3>ask a question</h3>
     <%= form_tag do %>
-      <p><input type="email" name="email" style="width: 250px;" value="your email"/></p>
-      <p><textarea></textarea></p> 
+      <p><input type="email" name="email" placeholder="your email" /></p>
+      <p><textarea placeholder="your question"></textarea></p> 
     <% end %>
   </div>
 </div>
