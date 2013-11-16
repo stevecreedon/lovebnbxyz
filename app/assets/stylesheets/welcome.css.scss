@@ -2,30 +2,34 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$basebg: #555;
-$descriptionbg: #C8BADB;
-$contactbg: #FEC601;
+html, body{height: 100%;
+           font-family: 'Lato', sans-serif;}
 
-html, body{height: 100%}
 
-#carousel{background-color: $basebg;}
-#carousel img{margin-left: auto; margin-right: auto;}
+.navbar{margin-bottom: 0px}
+
+
+
 
 img.host{clear: both;}
 
-h1 {
- padding: 5px 40px 5px 40px;
+div.title{
+
+  margin: -20px 0 -10px 0;
+  background-color: $basebg;
+
+  h1 {
+   padding: 10px 10px 10px 10px;
+   font-family: 'Lato', sans-serif;
+   font-weight: 100;
+   font-size: 3em;
+   color: #ccc;
+   text-transform:lowercase;
+  }
+
 }
 
-a.carousel-control.right{
-  background-color: $basebg;
-  background-image: none;
-}
 
-a.carousel-control.left{
-  background-color: $basebg;
-  background-image: none;
-}
 
 div.photos{
 
@@ -33,11 +37,17 @@ div.photos{
      margin: 5px 0 5px 0;}
 
   background-color: $descriptionbg;
-  color: black;
+  background-image: $descriptionbg-image;
+
+  color: $descriptionfg;
   font-size: 1.2em;
 
   div.carousel{
     margin: 0 -15px 0 -15px;
+  }
+
+  div.description{
+    margin: 20px 10px 20px 10px;
   }
 
   div.host{
@@ -45,8 +55,9 @@ div.photos{
     img{clear: both;
         padding-bottom: 5px;}
 
-    background-color: darken($descriptionbg, 10%);
-    color: white;
+    background-color: $hostbg;
+    background-image: $hostbg-image; 
+    color: $hostfg;
     padding: 15px;
 
     ul {
@@ -72,7 +83,9 @@ div.photos{
 
 div.find{
   background-color: $basebg;
-  color: white;
+  color: $basefg;
+
+  p{width: 80%;}
 
   div:last-child{
     padding-left: 0px;
@@ -112,16 +125,19 @@ div.contact{
   input, textarea{width: 250px;}
 
   div.ask{
-    background-color: $contactbg;
+    background-color: $askbg;
+    background-image: $askbg-image;
     min-height: 200px;
   }
 
   div.availability{
-    background-color: lighten($contactbg, 20%);
+    background-color: $availabilitybg;
+    background-image: $availabilitybg-image;
     min-height: 200px;
   }
 
   background-color: $basebg;
+  color: $askfg;
 
 }
 
@@ -129,8 +145,8 @@ footer{
   height: 75px;
   border-top: 5px solid white;
   border-bottom: 5px solid white;
-  background-color: $basebg;
-  color: white;
+  background-color: $footerbg;
+  color: $footerfg;
   padding: 0 0 0 20px;
 
 }

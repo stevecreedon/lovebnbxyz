@@ -1,5 +1,12 @@
+<ol class="breadcrumb">
+  <li><%= link_to "2 bed apartment in central london" %></li>
+  <li><%= link_to "greenwich" %></li>
+  <li><%= link_to "close to river" %></li>
+</ol>
 
-<h1><%= @site.user.property.title %></h1>
+<div class="title">
+  <h1><%= @site.user.property.title %></h1>
+</div>
 
 <div class="row-fluid clearfix photos">
 <div class="col-sm-9 property-photo">
@@ -30,7 +37,7 @@
     </a>
   </div>
 
-  <div>
+  <div class="description">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ullamcorper velit. Donec vehicula euismod est, interdum sollicitudin orci rhoncus vel. In faucibus nisi id erat vehicula cursus. Nullam tristique interdum nisi, non convallis erat placerat sit amet. Sed commodo quis tellus quis dictum. Suspendisse sed felis sit amet mi facilisis vulputate. Aliquam a est ut massa hendrerit semper quis ut mauris. Morbi sit amet lectus arcu. Proin porttitor convallis metus, nec consequat justo blandit vel.</p>
 
       <p>Ut eget turpis tempus, pulvinar sem eu, imperdiet justo. Aliquam laoreet tempus arcu nec imperdiet. Sed scelerisque, ante a condimentum aliquet, est odio interdum justo, eu tristique quam urna ultricies metus. Morbi fermentum ante vel quam tincidunt, ac convallis ipsum cursus. Vivamus libero felis, ultricies sit amet ultrices id, vulputate cursus enim. Phasellus pellentesque scelerisque enim vitae aliquam. Mauris vitae pulvinar quam. In urna purus, dictum at odio a, ornare tincidunt lorem. Nullam a porttitor lorem. Ut bibendum sollicitudin massa, vitae egestas augue vestibulum ut. Quisque porttitor in mi ultricies pulvinar. In hac habitasse platea dictumst. Praesent faucibus justo viverra felis iaculis aliquet. Nunc auctor neque at odio dapibus, ut sodales velit consequat.</p>
@@ -97,8 +104,9 @@
       <p><input type="date" name="checkout" placeholder="depart" /></p>
       <p><select>
            <option>exact dates only</option>
-           <option>flexible by a few days</option>
-           <option>very flexible</option>
+           <option>can be another weekend</option>
+           <option>can be another time within a few days</option>
+           <option>can be another time within a few weeks</option>
          </select></p> 
     <% end %>
   </div>

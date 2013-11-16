@@ -1,0 +1,39 @@
+#carousel img{margin-left: auto; margin-right: auto;}
+
+a.carousel-control.right{
+  background-color: none;
+  background-image: none;
+}
+
+a.carousel-control.left{
+  background-color: none;
+  background-image: none;
+}
+
+.carousel-control .glyphicon,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 5;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-family: serif;
+}
+
+.carousel-control .icon-prev:before {
+  font-size: 4em; 
+}
+
+.carousel-control .icon-next:before {
+  font-size: 4em;
+}
+
+div#carousel{
+  background-color: none;
+  background-image: url($carousel-image);
+}

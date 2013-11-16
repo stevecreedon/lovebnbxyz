@@ -14,3 +14,6 @@
 //= require bootstrap
 //= require welcome
 
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400);
+
+

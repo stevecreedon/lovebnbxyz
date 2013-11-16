@@ -56,7 +56,7 @@ module Lovebnbwww
     # Enable the asset pipeline
     config.assets.enabled = true
     config.assets.precompile += %w(
-      date_picker.js
+      date_picker.js date-picker.css hip-urban.css beach.css
     )
 
 

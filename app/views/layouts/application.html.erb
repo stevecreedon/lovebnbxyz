@@ -2,10 +2,12 @@
 <html>
 <head>
   <title>Lovebnbwww</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "beach", :media => "all" %>
+  <%= stylesheet_link_tag    "themes/hip-urban", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <% unless is_mobile_device? %>
     <%= javascript_include_tag "date_picker" %>
+    <%= stylesheet_link_tag "date_picker" %>
   <% end %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="initial-scale=1"> 
