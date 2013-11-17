@@ -7,7 +7,7 @@ $descriptionbg: #C8BADB;
 $descriptionfg: #000;
 $hostbg: darken($descriptionbg, 10%);
 $hostfg: #fff;
-$descriptionbg-image: none;
+$descriptionbg-image: url('carouselbg.jpg?v1');
 $hostbg-image: none;
 
 
@@ -18,8 +18,6 @@ $availabilitybg: lighten($askbg, 20%);
 $footerbg: $basebg;
 $footerfg: $basefg;
 
-
-$carousel-image: 'carouselbg.jpg?v1';
 
 @import "base";
 
