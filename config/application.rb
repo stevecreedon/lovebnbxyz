@@ -59,6 +59,7 @@ module Lovebnbwww
       date_picker.js date-picker.css hip-urban.css beach.css cottage.css ski.css
     )
 
+    config.assets.initialize_on_precompile = false #for heroku
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
