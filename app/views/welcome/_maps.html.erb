@@ -1,0 +1,44 @@
+<div id="map-carousel" class="row-fluid clearfix">
+
+  <div class="col-sm-6">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#map-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#map-carousel" data-slide-to="1"></li>
+      <li data-target="#map-carousel" data-slide-to="2"></li>
+      <li data-target="#map-carousel" data-slide-to="3"></li>
+    </ol>
+
+<%
+  
+  #The free version of static maps limits size to 640px.
+  maps = ["http://maps.google.com/maps/api/staticmap?center=52.503537,13.411071&zoom=10&markers=color:red|51.154325,11.801663|52.503537,13.411071&size=640x550&sensor=false",
+          "http://maps.google.com/maps/api/staticmap?center=52.503537,13.411071&zoom=12&markers=color:red|51.154325,11.801663|52.503537,13.411071&size=640x550&sensor=false",
+          "http://maps.google.com/maps/api/staticmap?center=52.503537,13.411071&zoom=14&markers=color:red|51.154325,11.801663|52.503537,13.411071&size=640x550&sensor=false",
+          "http://maps.google.com/maps/api/staticmap?center=52.503537,13.411071&zoom=16&markers=color:red|51.154325,11.801663|52.503537,13.411071&size=640x550&sensor=false"]
+
+ %>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <% maps.each do |src| %>
+        <div class="item <%= 'active' if src == maps.first %>">
+           <img src="<%= src %>">
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="col-sm-3">
+    <h3>Zoom:</h3>
+    <div class="carousel-control-container clearfix btn-group btn-group-lg">
+    <!-- Controls -->
+      <div class="map-carousel-control"><button class="btn btn-primary" href="#map-carousel" data-slide-to="0">small</button></div>
+      <div class="map-carousel-control"><button class="btn btn-primary" href="#map-carousel" data-slide-to="1">med</button></div>
+      <div class="map-carousel-control"><button class="btn btn-primary" href="#map-carousel" data-slide-to="2">large</button></div>
+      <div class="map-carousel-control"><button class="btn btn-primary" href="#map-carousel" data-slide-to="3">vlarge</button></div>
+    </div>
+  </div>
+
+</div>

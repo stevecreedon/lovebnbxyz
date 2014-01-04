@@ -1,20 +1,28 @@
 //Carousel and contact
-$basebg: #fff;
+$basebg: #EEF251;
 $basefg: #555;
 
 //Description and host (host bg is a function of description bg)
 $descriptionfg: #fff;
+
+
+
+
+
+$descriptionbg: #EEF251;
 $descriptionbg-image: url(cottagebg.jpg);
 //$hostbg-image: url(descriptionbeach.jpg);
 
-$hostbg: #A08689;
+$hostbg: #AAB100;
 $hostfg: #fff;
 
-$askbg: #D5544F;
+$askbg: #ffF;
 $askfg: #000;
 $availabilitybg: lighten($askbg, 20%);
 
-$footerbg: $hostbg;
-$footerfg: #000;
+$footerbg: #555;
+$footerfg: #fff;
 
 @import "base";
+
+
